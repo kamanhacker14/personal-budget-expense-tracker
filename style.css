@@ -1,64 +1,177 @@
-/* Element selector */
+```css
+/* General page styling */
+
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
-    background-color: #f4f4f4;
+    padding: 0;
+    background-color: #f4f6f8;
+    color: #333;
 }
 
-/* ID selector */
+
+/* Header */
+
 header {
     text-align: center;
-    background-color: white;
+    background-color: #1f4e78;
+    color: white;
     padding: 30px;
-    margin-bottom: 20px;
 }
 
-/* Element selector */
-h1 {
-    font-size: 36px;
+header img {
     margin-bottom: 10px;
 }
 
-/* ID selector */
-#add-expense {
-    background-color: #e8f5e9;
+header h1 {
+    margin: 10px 0;
+}
+
+
+/* Main content */
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+
+/* Sections */
+
+.add-expense-section,
+.expenses-section,
+.instructions-section,
+.multimedia-section {
+    background-color: white;
     padding: 25px;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* ID selector */
-#your-expenses {
-    background-color: #fff3e0;
-    padding: 25px;
-    border-radius: 8px;
+
+/* Form */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-/* Class selector */
-.input-section {
-    margin-bottom: 15px;
-}
 
-/* Element selector */
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
+/* Advanced selector: descendant selector */
 
-/* Element selector */
-input {
-    width: 100%;
-    max-width: 400px;
+.add-expense-section input,
+.add-expense-section select {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box;
 }
 
-/* Class selector */
-.placeholder {
-    font-style: italic;
-    color: #666;
+
+/* Advanced selector: negation pseudo-class */
+
+input:not([type="submit"]) {
+    background-color: #fafafa;
 }
+
+
+/* Advanced selector: focus pseudo-class */
+
+input:focus,
+select:focus {
+    outline: none;
+    border: 2px solid #1f4e78;
+}
+
+
+/* Button */
+
+button {
+    padding: 12px;
+    background-color: #1f4e78;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #163a5a;
+}
+
+
+/* Expense table */
+
+.expenses-section table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+
+/* Advanced selector: descendant selector */
+
+.expenses-section td,
+.expenses-section th {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+
+/* Table header */
+
+.expenses-section th {
+    background-color: #1f4e78;
+    color: white;
+}
+
+
+/* Advanced selector: nth-child */
+
+.expenses-section tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+/* Table row hover */
+
+.expenses-section tbody tr:hover {
+    background-color: #dceeff;
+}
+
+
+/* First row selector */
+
+.expenses-section tbody tr:first-child {
+    font-weight: bold;
+}
+
+
+/* Instructions */
+
+summary {
+    cursor: pointer;
+    font-weight: bold;
+    padding: 10px;
+}
+
+
+/* Video */
+
+iframe {
+    max-width: 100%;
+}
+
+
+/* Footer */
+
+footer {
+    text-align: center;
+    background-color: #1f4e78;
+    color: white;
+    padding: 20px;
+}
+```
