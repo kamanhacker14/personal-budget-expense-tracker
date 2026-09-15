@@ -1,0 +1,64 @@
+/* Element selector */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* ID selector */
+header {
+    text-align: center;
+    background-color: white;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+/* Element selector */
+h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* ID selector */
+#add-expense {
+    background-color: #e8f5e9;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+/* ID selector */
+#your-expenses {
+    background-color: #fff3e0;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+/* Class selector */
+.input-section {
+    margin-bottom: 15px;
+}
+
+/* Element selector */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Element selector */
+input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+/* Class selector */
+.placeholder {
+    font-style: italic;
+    color: #666;
+}
